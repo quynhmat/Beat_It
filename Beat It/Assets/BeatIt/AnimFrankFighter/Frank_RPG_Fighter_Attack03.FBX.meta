@@ -75,7 +75,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.50021726
+      - time: 0.5443349
         functionName: SendEvent
         data: NextHit
         objectReferenceParameter: {instanceID: 0}
