@@ -30606,12 +30606,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.LoadScene
+        - HutongGames.PlayMaker.Actions.ShowInterstitial
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 20a9b100
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 20a9b10000000000
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
