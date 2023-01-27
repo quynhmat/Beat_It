@@ -67,7 +67,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101010101010101010101
-        actionIsOpen: 0000000001000000000000
+        actionIsOpen: 0000000000000000000000
         actionStartIndex: 000000000300000006000000090000000c0000000f00000014000000170000001b0000001e00000023000000
         actionHashCodes: 786b3902f90ba701786b3902f90ba701f90ba701b2cf1000603dd90509fbab04603dd9055b66cf00ba7ea101
         unityObjectParams: []
@@ -2340,7 +2340,7 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 0101010101
+        actionEnabled: 0100010001
         actionIsOpen: 0000000001
         actionStartIndex: 0000000003000000070000000a0000000e000000
         actionHashCodes: 603dd90509fbab04603dd90509fbab0448c01101
@@ -2653,16 +2653,18 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.IntOperator
         - HutongGames.PlayMaker.Actions.UiTextSetText
         - HutongGames.PlayMaker.Actions.PlaySound
+        - HutongGames.PlayMaker.Actions.SendEventByName
         - HutongGames.PlayMaker.Actions.IntCompare
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 00000101
-        actionStartIndex: 0000000005000000090000000d000000
-        actionHashCodes: 1418090309fbab049cdc390509faa102
+        - 
+        actionEnabled: 0100010101
+        actionIsOpen: 0000000001
+        actionStartIndex: 0000000005000000090000000d00000011000000
+        actionHashCodes: 1418090309fbab049cdc3905ba7ea10109faa102
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2685,7 +2687,39 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 1
+              name: Info_Player
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: FSM
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -2695,6 +2729,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Update
         fsmObjectParams:
         - useVariable: 0
           name: 
@@ -2713,6 +2753,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams:
         - useVariable: 1
           name: myHP
@@ -2766,12 +2812,12 @@ MonoBehaviour:
         - GoBack
         - GoBack
         - FINISHED
-        byteData: 01000000000000
+        byteData: 0100000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000007000000100000000100000014000000120000001100000001000000140000001c000000180000000f000000100000001000000017000000170000001700000001000000
+        paramDataType: 100000001000000007000000100000000100000014000000120000001100000001000000140000001c000000180000000f0000001f000000120000000f00000001000000100000001000000017000000170000001700000001000000
         paramName:
         - integer1
         - integer2
@@ -2786,14 +2832,18 @@ MonoBehaviour:
         - position
         - clip
         - volume
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
         - integer1
         - integer2
         - equal
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 00000000010000000000000002000000040000000000000000000000000000000500000001000000000000000000000000000000030000000400000000000000010000000200000006000000
-        paramByteDataSize: 00000000000000000400000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000001000000000000000200000004000000000000000000000000000000050000000100000000000000000000000000000000000000010000000100000006000000030000000400000000000000010000000200000007000000
+        paramByteDataSize: 0000000000000000040000000000000001000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000001000000
     - name: Die
       description: 
       colorIndex: 0
@@ -3744,6 +3794,18 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 0}
       - useVariable: 1
+        name: FXHit
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: FXHit_Punch
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: Hit_1
         tooltip: 
         showInInspector: 1
@@ -3756,7 +3818,25 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 0}
       - useVariable: 1
+        name: Info_Player
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: MainCam
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: PointCam
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: Pool
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -3780,30 +3860,6 @@ MonoBehaviour:
         networkSync: 0
         value: {fileID: 0}
       - useVariable: 1
-        name: PointCam
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
-        name: Pool
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
-        name: FXHit_Punch
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
-        name: FXHit
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      - useVariable: 1
         name: myLook
         tooltip: 
         showInInspector: 0
@@ -3816,7 +3872,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
