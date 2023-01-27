@@ -1,0 +1,12 @@
+HP Bar
+Multiple Hit  DONE
+Critical Hit  done
+Effect Hit  done
+State Change
+Boss
+10 State
+Story
+Upgrade Dmg & HP
+Balancing Level Difficult 
+Add Logo Scene
+Design Logo Cyber Fight
