@@ -725,16 +725,28 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetStringValue
         - HutongGames.PlayMaker.Actions.LoadScene
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 20a9b100
+        - 
+        - 
+        actionEnabled: 010001
+        actionIsOpen: 000001
+        actionStartIndex: 00000000030000000a000000
+        actionHashCodes: c030f10320a9b100b2cf1000
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: LoadingScene
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -742,6 +754,18 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
+        - useVariable: 1
+          name: SceneLoad
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: City
         - useVariable: 0
           name: 
           tooltip: 
@@ -774,6 +798,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -782,13 +818,16 @@ MonoBehaviour:
         stringParams:
         - Move
         - FINISHED
-        byteData: 01000000
+        byteData: 00010000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0700000012000000100000002a000000110000001700000017000000
+        paramDataType: 1200000012000000010000000700000012000000100000002a0000001100000017000000170000001400000011000000110000000100000001000000
         paramName:
+        - stringVariable
+        - stringValue
+        - everyFrame
         - sceneReference
         - sceneByName
         - sceneAtIndex
@@ -796,8 +835,13 @@ MonoBehaviour:
         - success
         - successEvent
         - failureEvent
-        paramDataPos: 00000000000000000000000000000000000000000000000001000000
-        paramByteDataSize: 04000000000000000000000000000000000000000000000000000000
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 000000000100000000000000010000000200000000000000000000000000000000000000010000000000000001000000020000000500000006000000
+        paramByteDataSize: 000000000000000001000000040000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000
     - name: State 4
       description: 
       colorIndex: 0
@@ -3421,8 +3465,8 @@ GameObject:
   - component: {fileID: 1258152709}
   - component: {fileID: 1258152708}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
+  m_Name: Camera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

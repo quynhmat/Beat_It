@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/BeatIt/Scene/Main.unity
+    path: Assets/BeatIt/MainScene.unity
+    guid: 4501af7abe0912446aaa056e496fb1ee
+  - enabled: 1
+    path: Assets/BeatIt/Scene/Welcome.unity
     guid: 0786f0610a691e5439880c38e55406fa
   - enabled: 1
     path: Assets/BeatIt/City.unity
