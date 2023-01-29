@@ -734,7 +734,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010001
-        actionIsOpen: 000001
+        actionIsOpen: 010001
         actionStartIndex: 00000000030000000a000000
         actionHashCodes: c030f10320a9b100b2cf1000
         unityObjectParams: []
@@ -761,12 +761,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: StringScene
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: City
+          value: 
         - useVariable: 0
           name: 
           tooltip: 
@@ -961,7 +961,13 @@ MonoBehaviour:
       floatVariables: []
       intVariables: []
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: StringScene
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: BigCity
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -975,7 +981,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 00000000
     description: 
     docUrl: 
     showStateLabel: 0
