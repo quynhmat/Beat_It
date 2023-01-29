@@ -1,3 +1,7 @@
+Add item HP 
+Add Compass
+Add 
+
 HP Bar   DONE
 Multiple Hit  DONE
 Critical Hit  done
@@ -5,6 +9,19 @@ Effect Hit  done
 State Change
 Boss  DONE
 10 State
+-The Bar
+-The Market
+-The Server
+-The Factory
+-The Street
+-THe Gate
+-THe Priston
+-The Club
+-The Garage
+-The Capital
+-The Sky
+
+
 Story
 Upgrade Dmg & HP
 Balancing Level Difficult 
